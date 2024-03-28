@@ -28,6 +28,8 @@ def signup():
             st.success("You have registered successfully!")
             row = [email, hash1, phone]
             sheet.append_row(row)
+            st.divider()
+            st.link_button("Go Back to Login Page", "https://test2fa.streamlit.app/", use_container_width=True)
         else:
             st.warning("Password is not the same as above!")
 
