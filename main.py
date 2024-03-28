@@ -33,9 +33,9 @@ def gui():
     login_button = st.button("Login :sunglasses:", help="Walk into Creativity", use_container_width=True)
     if login_button:
         login(email, pwd, sheet1)
-    # st.divider()
-    # st.subheader("Don't have an account?")
-    # st.button("Sign Up Now", key="signup_button", on_click = st.switch_page("Registration"))
+    st.divider()
+    st.subheader("Don't have an account?")
+    st.link_button("Sign Up Now", "https://test2fa.streamlit.app/Registration", use_container_width=True)
         
 
 # Run the GUI
