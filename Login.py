@@ -18,6 +18,7 @@ def login(email, pwd, sheet):
     records = sheet.get_all_records()
     for record in records:
         if record['Email'] == email and record['Password'] == auth_hash:
+            
             st.success("Logged in Successfully!")
             return
     st.error("Login Failed!")
